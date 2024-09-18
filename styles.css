@@ -1,0 +1,435 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+:root{
+    --blanco-letras: #ffffffd3;
+    --negro-letras: #3E3E3E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+}
+button:hover{
+    cursor: pointer;
+}
+header{
+    width: 100%;
+}
+nav{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.13);
+    z-index: 9999;
+    background-color: #ffffff;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 61px;
+    width: 100%;
+    padding: 0 46px;
+}
+nav .logo{
+    width: 32px;
+}
+.no, .nos{
+    display: none;
+}
+header .header-tipo-colorido{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 567px;
+    background-image: url(./assets/images/pibe-colorido.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 9%;
+    padding-bottom: 60px;
+    color: var(--blanco-letras);
+}
+header .header-tipo-colorido .header-texto h1{
+    font-size: 27.14px;
+    font-weight: 800;
+}
+header .header-tipo-colorido .header-texto h5{
+    font-size: 14.63px;
+    font-weight: 200;
+}
+.button{
+    color: var(--blanco-letras);
+    font-size: 10px;
+    font-weight: medium;
+    width: 97px;
+    height: 24px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: none;
+    background: linear-gradient(170deg, #98268E 20%, #4B57AA 72%, #1B75BB 100%);
+}
+.button-vermas{
+    min-width: 111px;
+    height: 29px;
+    background-color: #5175EF;
+    border-radius: 50px;
+    border: none;
+    box-shadow: none;
+    font-size: 10px;
+    color: var(--blanco-letras);
+    transition: .3s ease;
+}
+main{
+    position: relative;
+}
+main .main-primera-seccion{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-top: 60px;
+    background-image: url(./assets/images/fondo-rarete.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mujer{
+    display: none;
+}
+.titulos{
+    line-height: 1.5;
+    text-align: center;
+}
+.h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.h5{
+    font-size: 17px;
+    font-weight: 400;
+}
+.main-primer-texto{
+    color: var(--negro-letras);
+}
+.primera-seccion-scroll{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    height: 280px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.primera-seccion-scroll::-webkit-scrollbar{
+    height: 0;
+}
+.primera-seccion-scroll::-webkit-scrollbar-track{
+    background:none;
+}
+.primera-seccion-scroll::-webkit-scrollbar-thumb{
+    background:none;
+}
+.primera-seccion-scroll div{
+    border-radius: 10px;
+}
+.primera-seccion-scroll img{
+    scroll-snap-align: center;
+    height: 280px;
+}
+.eventos-vermas{
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.main-sobre-nosotros{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/images/multi-color.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 580px;
+    padding-top: 50px;
+    color: var(--blanco-letras);
+}
+.nosotros-primer-texto{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.nosotros-contenedor{
+    position: relative;
+    padding: 0 17%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 293px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.062);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.068); 
+    justify-content: space-between;
+}
+.nosotros-contenedor h2{
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.nosotros-contenedor p{
+    font-size: 13.41px;
+    font-weight: 300;
+}
+.nosotros-bolas{
+    display: flex;
+    justify-content: space-between;
+    justify-self: flex-end;
+    width: 79px;
+    align-self: center;
+    bottom: 15px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.nosotros-button{
+    margin-top: 70px;
+    margin-bottom: 55px;
+    align-self: center;
+}
+.main-parati{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/images/fondo-rarete.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parati-primer-texto{
+    color: var(--negro-letras);
+    margin-bottom: 50px;
+}
+.parati-imagenes{
+    width: 90%;
+    max-width: 700px;
+    height: 510px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-self: center;
+    padding: 20px;
+    gap: 3% ;
+    margin-bottom: 30px;
+}
+.parati-imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hiden{
+    display: none;
+}
+.largas{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 6;
+    border-radius: 10px;
+    padding: 5%;
+    color: var(--blanco-letras);
+    padding-right: 30%;
+    transition: .2s ease;
+}
+.largas:hover,.cortas:hover{
+    opacity: .85; 
+
+}
+.largas h2{
+    font-size: 23px;
+    font-weight: 500;
+}
+.largas p{
+    font-size: 11.6px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.cortas{
+    grid-column: span 2;
+    transition: .2s ease;
+}
+.choco{
+    background-image: url(./assets/images/choco-oscuro.png);
+}
+.plantas{
+    background-image: url(./assets/images/planta-oscura.png);
+}
+.bolitas2{
+    align-self: center;
+}
+.bolitas2 img{
+    width: 19px;
+}
+.parati-button{
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+.main-concursos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/images/dali.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+.concursos-primer-texto{
+    color: var(--blanco-letras);
+}
+.concursos-primer-texto h2{
+    font-weight: bold;
+}
+.concursos-primer-texto h5{
+    font-weight: 300;
+}
+.flex{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.dali{
+    width: 85%;
+    max-width: 400px;
+}
+.llamita{
+    position: absolute;
+    bottom: 15px;
+    right: 80px;
+}
+.concurso-texto{
+    color: var(--blanco-letras);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20% ;
+    gap: 30px;
+    align-items: center;
+}
+.concurso-texto h2{
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    align-items: center;
+}
+.concurso-texto h2 img{
+    width: 30px;
+}
+.concurso-texto p{
+    font-size: 14px;
+    font-weight: 300;
+}
+.concurso-vermas{
+    height: 45px;
+    width: 184px;
+    font-size: 19px;
+    align-self: center;
+    margin-top: 30px;
+    
+}
+.concurso-bolas{
+    width: 100px;
+    padding-top: 70px;
+}
+.concurso-bolas img{
+    width: 19px;
+    height: 19px;
+    margin-bottom: 50px;
+}
+footer{
+    width: 100%;
+}
+.transparente{
+    display: flex;
+    align-items: end;
+    height: 400px;
+    width: 100%;
+    margin-top: -65px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    background-image: url(./assets/images/footer-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+.parriba{
+    margin-top: 80px;
+}
+.parriba img{
+    width: 30px;
+    transition: .1s ease;
+}
+.parriba img:hover{
+    transform: scale(1.1) translateY(-3px);
+}
+.footer .logo-footer{
+    width: 57px;
+    margin-top: 30px;
+}
+.logo2{
+    display: none;
+}
+.sociales{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 40%;
+    max-width: 200px;
+}
+.info{
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.info p{
+    font-size: 12px;
+    line-height: 21px;
+    color: var(--blanco-letras);
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.info p span img{
+    width: 17px;
+}
+.copyright{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    color: var(--blanco-letras);
+    font-weight: 200;
+}
+.button-vermas:hover{
+    background-color: #083455;
+}
+.sociales a{
+    transition: all .2s ease;
+}
+.sociales a:hover{
+transform: scale(1.2);}

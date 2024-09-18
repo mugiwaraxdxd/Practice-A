@@ -1,0 +1,198 @@
+.footer{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    background-image: url(../assets/images/footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+.transparente{
+    display: flex;
+    align-items: end;
+    height: 600px;
+    width: 100%;
+    margin-top: -275px;
+}
+.logo1{
+    display: none;
+}
+.logo2{
+    display: block;
+}
+header .header-tipo-colorido{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 377px;
+    padding: 15%;
+    padding-bottom: 60px;
+    color: var(--blanco-letras);
+}
+.titulos{
+    padding:0 15%;
+    line-height: 1.5;
+    text-align: start;
+}
+.h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.h5{
+    font-size: 17px;
+    font-weight: 400;
+}
+.primera-seccion-scroll img{
+    scroll-snap-align: center;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.primera-seccion-scroll div{
+    border-radius: 10px;
+    height: 250px;
+    width: 400px;
+}
+.primera-seccion-scroll{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    height: 280px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.eventos-vermas{
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+main .main-primera-seccion{
+    padding-top: 30px;
+}
+.nosotros-primer-texto{
+    margin-bottom: 20px;
+}
+.main-sobre-nosotros{
+    padding-top: 20px;
+    min-height: unset;
+}
+.nosotros-contenedor{
+    position: relative;
+    padding: 0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 293px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.nosotros-contenedor h2{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nosotros-contenedor p{
+    font-size: 14.41px;
+    font-weight: 300;
+}
+.nosotros-button{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+.nosotros-contenedor-texto{
+    padding: 0 30% 5% 7%;
+}
+.flex{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 50px;
+    justify-content: space-between;
+    height: 700px;
+}
+.concurso-texto{
+    color: var(--blanco-letras);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10% ;
+    padding-left: 40px;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+}
+.dali{
+    padding-left: 5%;
+    width: 500px;
+    max-width: 380px;
+}
+.main-concursos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 630px;
+    padding-top: 40px;
+}
+.concurso-bolas{
+    width: 100px;
+    padding-top: 70px;
+    align-items: flex-end;
+}
+.main-parati{
+    padding: 20px 0;
+}
+.parati-primer-texto{
+    margin-bottom: 0px;
+}
+.parati-imagenes{
+    width: 90%;
+    max-width: 1124px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    align-self: center;
+    padding: 20px;
+    gap: 3% ;
+    margin-bottom: 2%;
+}
+.parati-imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hide{
+    display: none;
+}
+.choconew, .plantas{
+    grid-column: span 4;
+    grid-row: span 2;
+    transition: .2s ease;
+}
+.choconew:hover, .plantas:hover{
+    opacity: .9;
+}
+.dota, .silvio{
+    grid-column: span 3;
+    grid-row: span 4;
+}
+.plantas{
+    order: 4;
+}
+.hiden{
+    display: block;
+}
+.parati-button{
+    display: none;
+}

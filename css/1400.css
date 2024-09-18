@@ -1,0 +1,20 @@
+.dali{
+    padding-left: 5%;
+    min-width: 750px;
+}
+.main-concursos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    padding-top: 40px;
+}
+.concurso-texto{
+    color: var(--blanco-letras);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10% ;
+    gap: 30px;
+    align-items: center;
+    width: 50%;
+}

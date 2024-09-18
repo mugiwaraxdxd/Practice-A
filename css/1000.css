@@ -1,0 +1,119 @@
+nav{
+    padding: 0 10%;
+}
+.nav-izq{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    gap: 20px;
+}
+.nav-der{
+    width: 45%;
+    display: flex;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.input{
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 180px;
+    border-radius: 50px;
+    justify-content: center;
+    border: 1px solid #E6E6E6;
+    background-color: #FBFBFB;
+}
+.input input{
+    background: unset;
+    outline: none;
+    border: none;
+    width: 90%;
+}
+.input img{
+    margin-top: 6px;
+}
+.settings{
+    padding-top:7px;
+    transition: .2s ease;
+}
+.settings:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.nav-izq img{
+    margin-right: 20px;
+}
+.nav-izq a{
+    text-decoration: none;
+    color: #3E3E3E;
+    transition: .3s ease;
+    text-decoration: underline 2px rgba(0, 0, 0, 0);
+}
+.nav-izq a:hover{
+    text-decoration: underline 2px #3E3E3E
+}
+.hamburguesa{
+    display: none;
+}
+header .header-tipo-colorido{
+    display: flex;
+    align-items: end;
+    width: 100%;
+    height: 677px;
+    padding: 15%;
+    padding-bottom: 60px;
+    color: var(--blanco-letras);
+    background-image: url(../assets/images/tipo-colorido.jpg);
+}
+.mujer{
+    width: 480px;
+    display: inline-block;
+    position: absolute;
+    bottom:  0;
+    right: 0;
+    z-index: 999;
+}
+.dali{
+    padding-left: 5%;
+    min-width: 550px;
+}
+.main-concursos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    padding-top: 40px;
+}
+.concurso-texto h2{
+    font-size: 30px;
+}
+.concurso-texto p{
+    font-size: 18px;
+}
+.button-vermas{
+    width: 111px;
+    height: 29px;
+}
+.info{
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.br{
+    display: none;
+}
+.copyright{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: var(--blanco-letras);
+    font-weight: 200;
+}
+.nos{
+    display: inline-block;
+}
